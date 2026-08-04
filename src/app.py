@@ -18,7 +18,7 @@ st.caption("EfficientNetB0 transfer learning + Grad-CAM++ explainability")
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("model.h5")
+    return tf.keras.models.load_model("models/model.h5")
 
 
 model = load_model()
