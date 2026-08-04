@@ -56,16 +56,78 @@ python src/evaluate.py
 streamlit run src/app.py
 ```
 
-## Results
-_Fill in after training:_
+# Results
+
+The EfficientNetB0 transfer learning model achieved **91.0% test accuracy** with an **ROC-AUC of 0.993**.
+
+More importantly, the model achieved **97% recall for the Parkinson's class**, indicating that it successfully identified nearly all Parkinson's cases while maintaining strong overall performance.
 
 | Metric | Value |
-|---|---|
-| Accuracy | 91.0%|
-| Precision | 91.8%|
-| Recall (Sensitivity) | 91.0%|
-| F1-score | 91.0%|
-| ROC-AUC | 0.993%|
+|---------|-------|
+| Accuracy | **91.0%** |
+| Precision | **91.8%** |
+| Recall (Sensitivity) | **91.0%** |
+| F1-score | **91.0%** |
+| ROC-AUC | **0.993** |
+
+---
+
+## Classification Report
+
+| Class | Precision | Recall | F1-score |
+|-------|----------:|--------:|----------:|
+| Normal | 0.97 | 0.85 | 0.91 |
+| Parkinson's | 0.86 | **0.97** | 0.91 |
+
+---
+
+## Confusion Matrix
+
+![Confusion Matrix](assets/confusion_matrix.png)
+
+---
+
+## ROC Curve
+
+![ROC Curve](assets/roc_curve.png)
+
+---
+
+## Grad-CAM++ Visualization
+
+Grad-CAM++ provides visual explanations by highlighting the image regions that contributed most to the model's prediction, improving model interpretability.
+
+![GradCAM++](assets/gradcam_output.png)
+
+---
+
+## Technologies Used
+
+- Python
+- TensorFlow / Keras
+- EfficientNetB0
+- OpenCV
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Streamlit
+- Google Colab
+
+---
+
+## Future Work
+
+- Compare the transfer learning model against a baseline CNN.
+- Train and evaluate on larger MRI datasets such as **PPMI**.
+- Fine-tune additional EfficientNet variants.
+- Improve Grad-CAM++ visualizations.
+- Deploy the Streamlit application on Streamlit Community Cloud.
+- Extend the pipeline for multi-class neurological disease classification.
+
+---
 
 ## License
-Dataset usage subject to the original Kaggle dataset's license/terms.
+
+This project is intended for educational and research purposes.
+
+The MRI dataset is **not distributed** with this repository and remains subject to the original Kaggle dataset license and terms of use.
