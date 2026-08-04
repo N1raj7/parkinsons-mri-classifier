@@ -8,8 +8,12 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image
 
-from dataset import IMG_SIZE
-from gradcam import find_last_conv_layer, gradcam_plusplus, overlay_heatmap
+from src.dataset import IMG_SIZE
+from src.gradcam import (
+    find_last_conv_layer,
+    gradcam_plusplus,
+    overlay_heatmap,
+)
 
 st.set_page_config(page_title="Parkinson's MRI Classifier", layout="centered")
 st.title("🧠 Parkinson's Disease Detection from Brain MRI")
