@@ -1,7 +1,17 @@
+## 🚀 Live Demo
+
+**Try the application here:**
+
+https://parkinsons-detection-mri.streamlit.app/
+
+---
+
 # Parkinson's Disease Detection from Brain MRI (v2)
 
 CNN-based classification of Parkinson's disease vs. healthy control using structural brain MRI,
 built with transfer learning (EfficientNetB0) and Grad-CAM++ explainability.
+
+
 
 ## Improvements over v1
 - Transfer learning (EfficientNetB0 pretrained on ImageNet) instead of a from-scratch CNN
