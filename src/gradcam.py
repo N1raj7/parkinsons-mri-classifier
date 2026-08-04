@@ -13,7 +13,7 @@ import cv2
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
-from dataset import IMG_SIZE
+from src.dataset import IMG_SIZE
 
 
 def find_last_conv_layer(model):
