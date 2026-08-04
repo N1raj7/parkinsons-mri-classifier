@@ -1,0 +1,11 @@
+data/
+*.h5
+*.keras
+kaggle.json
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+outputs/
+*.png
+!docs/*.png
