@@ -4,6 +4,13 @@ Run:
     streamlit run src/app.py
 """
 
+import os
+import sys
+
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+if CURRENT_DIR not in sys.path:
+    sys.path.insert(0, CURRENT_DIR)
+
 import sys
 from pathlib import Path
 
@@ -15,8 +22,8 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image
 
-from src.dataset import IMG_SIZE
-from src.gradcam import (
+from dataset import IMG_SIZE
+from gradcam import (
     find_last_conv_layer,
     gradcam_plusplus,
     overlay_heatmap,
