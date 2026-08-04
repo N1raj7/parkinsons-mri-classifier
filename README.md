@@ -61,11 +61,11 @@ _Fill in after training:_
 
 | Metric | Value |
 |---|---|
-| Accuracy | |
-| Precision | |
-| Recall (Sensitivity) | |
-| F1-score | |
-| ROC-AUC | |
+| Accuracy | 91.0%|
+| Precision | 91.8%|
+| Recall (Sensitivity) | 91.0%|
+| F1-score | 91.0%|
+| ROC-AUC | 0.993%|
 
 ## License
 Dataset usage subject to the original Kaggle dataset's license/terms.
